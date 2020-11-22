@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#demo {
+    word-break: break-all;
+}
+
+#div1 {
+    position: fixed;
+    right: 10%;
+    top: 10%;
+}
+
+#div1::before {
+    content: "";
+    display: block;
+}
+
+#div1::after {
+    content: "";
+    display: block;
+}
+
+@media(max-width: 500px) {
+    #demo {
+        height: 50vh;
+        overflow: auto;
+    }
+
+    #divWapper {
+        height: 50vh;
+    }
+
+    #div1 {
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+}
